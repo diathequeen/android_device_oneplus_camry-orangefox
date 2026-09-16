@@ -44,6 +44,6 @@ git clone --branch 16.0 https://github.com/koaaN/android_device_oneplus_camry-or
 ```bash
 cd ~/android/fox_14.1
 source build/envsetup.sh
-lunch twrp_camry-eng
+lunch twrp_camry-ap2a-eng
 mka adbd recoveryimage
 ```
