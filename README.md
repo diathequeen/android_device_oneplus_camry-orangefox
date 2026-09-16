@@ -6,15 +6,14 @@
 - [x] Touch
 - [x] Decryption
 - [x] Vibration
-- [x] MTP
-- [x] ADB/FastbootD
+- [ ] MTP 
+- [x] ADB/FastbootD -- **ADB stops working after decrypt, take logs from decrypt screen only**
+- [x] Flashing
+- [x] Backup & Restore
+- [x] Factory Reset/Formatting data
 
 ## Untested
 
-- [ ] Flashing
-- [ ] Backup & Restore
-- [ ] Factory Reset
-- [ ] Flashlight
 - [ ] USB OTG Storage
 - [ ] KernelSU, KernelSU Next & SukiSU Ultra Installer
 
@@ -23,26 +22,22 @@
 ### Clone and sync the source
 
 ```bash
-mkdir -p ~/android/OrangeFox_14
-cd ~/android/OrangeFox_14
+mkdir -p ~/ofox_sync
+cd ~/ofox_sync
 git clone https://gitlab.com/OrangeFox/sync.git
 cd sync
 ./orangefox_sync.sh --branch 14.1 --path ~/android/fox_14.1
 ```
 
 ### Clone the device tree
-
+**From the root of OrangeFox source:**
 ```bash
-cd ~/android/fox_14.1/device
-mkdir -p oneplus
-cd oneplus
-git clone --branch 16.0 https://github.com/diathequeen/android_device_oneplus_camry-orangefox.git camry
+git clone https://github.com/diathequeen/android_device_oneplus_camry-orangefox.git -b 16.0 device/oneplus/camry
 ```
 
 ### Build
 
 ```bash
-cd ~/android/fox_14.1
 source build/envsetup.sh
 lunch twrp_camry-ap2a-eng
 mka adbd recoveryimage
