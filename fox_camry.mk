@@ -6,7 +6,7 @@
 #
 
 # Device presentation
-OF_MAINTAINER := koaaN
+OF_MAINTAINER := koaaN & diathequeen
 OF_SCREEN_H := 2400
 OF_STATUS_H := 123
 OF_HIDE_NOTCH := 1
