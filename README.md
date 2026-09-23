@@ -6,7 +6,7 @@
 - [x] Touch
 - [x] Decryption
 - [x] Vibration
-- [ ] MTP 
+- [x] MTP 
 - [x] ADB/FastbootD
 - [x] Flashing
 - [x] Backup & Restore
