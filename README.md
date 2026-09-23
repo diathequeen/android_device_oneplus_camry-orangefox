@@ -7,15 +7,16 @@
 - [x] Decryption
 - [x] Vibration
 - [ ] MTP 
-- [x] ADB/FastbootD -- **ADB stops working after decrypt, take logs from decrypt screen only**
+- [x] ADB/FastbootD
 - [x] Flashing
 - [x] Backup & Restore
 - [x] Factory Reset/Formatting data
+- [x] KernelSU, KernelSU Next & SukiSU Ultra Installer
 
 ## Untested
 
 - [ ] USB OTG Storage
-- [ ] KernelSU, KernelSU Next & SukiSU Ultra Installer
+
 
 ## How to build
 
