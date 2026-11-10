@@ -23,11 +23,9 @@
 ### Clone and sync the source
 
 ```bash
-mkdir -p ~/ofox_sync
-cd ~/ofox_sync
-git clone https://gitlab.com/OrangeFox/sync.git
-cd sync
-./orangefox_sync.sh --branch 14.1 --path ~/android/fox_14.1
+git clone https://gitlab.com/OrangeFox/sync.git orangefox_sync
+cd orangefox_sync
+./orangefox_sync.sh --branch 14.1 --path ~/fox_14.1
 ```
 
 ### Clone the device tree
